@@ -27,7 +27,7 @@ public class Frame{
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                textArea1.append(linker.doLink(textField1.getText()) + "\n");
+                textArea1.append(textField1.getText() + ":" + linker.doLink(textField1.getText()) + "\n");
                 textField1.setText("");
             }
         });
